@@ -2,6 +2,13 @@
   "_comment": "Fuentes ACTIVAS (las que andan hoy). Pelota Libre / Futbol Libre / Tarjeta Roja se sacaron: dominio caido o web rediseniada. Cuando vuelvan (o haya dominio nuevo) se agregan de nuevo aca, sin recompilar la app.",
   "sources": [
     {
+      "id": "pelotalibre", "name": "Pelota Libre",
+      "mirrors": ["https://pelotalibrehd.su", "https://pelotalibre.watch"],
+      "homePath": "/es/", "agendaPath": "/es/agenda/",
+      "sourceUtcOffsetMinutes": -300, "targetUtcOffsetMinutes": -180,
+      "channelsEnabled": false, "strategy": "menu2"
+    },
+    {
       "id": "alangulo1", "name": "Al Ángulo TV",
       "mirrors": ["https://alangulotv.su"],
       "homePath": "/", "agendaPath": "/agenda2/",
