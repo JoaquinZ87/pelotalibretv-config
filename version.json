@@ -1,6 +1,6 @@
 {
-  "versionCode": 2,
-  "versionName": "0.2",
+  "versionCode": 3,
+  "versionName": "0.3",
   "apkUrl": "https://github.com/JoaquinZ87/pelotalibretv-config/releases/latest/download/pelotalibre.apk",
-  "notes": "Auto-update + multi-fuente (7 fuentes) + SSL arreglado."
+  "notes": "Pelota Libre (2 frontends) · cambiar de señal desde el reproductor (Atrás) · Eventos centrado."
 }
