@@ -23,6 +23,13 @@
       "channelsEnabled": false, "strategy": "menuR"
     },
     {
+      "id": "alangulo2", "name": "Al Ángulo TV (2)",
+      "mirrors": ["https://alangulotv2.su"],
+      "homePath": "/", "agendaPath": "/agenda.php",
+      "sourceUtcOffsetMinutes": 60, "targetUtcOffsetMinutes": -180,
+      "channelsEnabled": false, "strategy": "menuR"
+    },
+    {
       "id": "rustico", "name": "Rústico TV",
       "mirrors": ["https://mirusticotv.su", "https://rusticotv.su"],
       "homePath": "/", "agendaPath": "/agenda.php",
@@ -37,13 +44,6 @@
       "channelsEnabled": false, "strategy": "rows",
       "eventRowSelector": "div.match", "eventTimeSelector": "span.time",
       "eventNameSelector": "span.name", "eventLinkSelector": "div.chans a[href]"
-    },
-    {
-      "id": "alangulo2", "name": "Al Ángulo TV (2)",
-      "mirrors": ["https://alangulotv2.su"],
-      "homePath": "/", "agendaPath": "/agenda.php",
-      "sourceUtcOffsetMinutes": 60, "targetUtcOffsetMinutes": -180,
-      "channelsEnabled": false, "strategy": "menuR"
     }
   ]
 }
