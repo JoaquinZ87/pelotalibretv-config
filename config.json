@@ -17,14 +17,14 @@
     },
     {
       "id": "alangulo1", "name": "Al Ángulo TV",
-      "mirrors": ["https://alangulotv.si", "https://alangulotv.su"],
-      "homePath": "/", "agendaPath": "/agenda.php",
+      "mirrors": ["https://alangulotv.su"],
+      "homePath": "/", "agendaPath": "/agenda2/",
       "sourceUtcOffsetMinutes": -300, "targetUtcOffsetMinutes": -180,
       "channelsEnabled": false, "strategy": "menuR"
     },
     {
       "id": "alangulo2", "name": "Al Ángulo TV (2)",
-      "mirrors": ["https://alangulotv2.su"],
+      "mirrors": ["https://alangulotv.si", "https://alangulotv2.su"],
       "homePath": "/", "agendaPath": "/agenda.php",
       "sourceUtcOffsetMinutes": 60, "targetUtcOffsetMinutes": -180,
       "channelsEnabled": false, "strategy": "menuR"
