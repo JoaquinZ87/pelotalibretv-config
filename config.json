@@ -17,8 +17,8 @@
     },
     {
       "id": "alangulo1", "name": "Al Ángulo TV",
-      "mirrors": ["https://alangulotv.su"],
-      "homePath": "/", "agendaPath": "/agenda2/",
+      "mirrors": ["https://alangulotv.si", "https://alangulotv.su"],
+      "homePath": "/", "agendaPath": "/agenda.php",
       "sourceUtcOffsetMinutes": -300, "targetUtcOffsetMinutes": -180,
       "channelsEnabled": false, "strategy": "menuR"
     },
