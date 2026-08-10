@@ -31,7 +31,7 @@
     },
     {
       "id": "rustico", "name": "Rústico TV",
-      "mirrors": ["https://mirusticotv.su", "https://rusticotv.su"],
+      "mirrors": ["https://rusticotv.la", "https://mirusticotv.su", "https://rusticotv.su"],
       "homePath": "/", "agendaPath": "/agenda.php",
       "sourceUtcOffsetMinutes": 60, "targetUtcOffsetMinutes": -180,
       "channelsEnabled": false, "strategy": "menuR"
@@ -39,7 +39,7 @@
     {
       "id": "rojadirecta", "name": "RojaDirecta",
       "mirrors": ["https://rojadirecta.st"],
-      "homePath": "/", "agendaPath": "/",
+      "homePath": "/", "agendaPath": "/programacion/",
       "sourceUtcOffsetMinutes": 120, "targetUtcOffsetMinutes": -180,
       "channelsEnabled": false, "strategy": "rows",
       "eventRowSelector": "div.match", "eventTimeSelector": "span.time",
