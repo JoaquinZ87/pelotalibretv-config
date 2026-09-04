@@ -1,6 +1,6 @@
 {
-  "versionCode": 5,
-  "versionName": "0.5",
+  "versionCode": 6,
+  "versionName": "0.6",
   "apkUrl": "https://github.com/JoaquinZ87/pelotalibretv-config/releases/latest/download/pelotalibre.apk",
-  "notes": "Reproducción automática (ya no hay que apretar la flechita) · solapas por plataforma + variantes por dominio · AlÁngulo por JSON."
+  "notes": "Esconde los carteles/popups de ads (age-gate, '90% off', etc.) · autoplay que no se frena · Pelota Libre con 4 variantes."
 }
