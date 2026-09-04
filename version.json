@@ -1,6 +1,6 @@
 {
-  "versionCode": 4,
-  "versionName": "0.4",
+  "versionCode": 5,
+  "versionName": "0.5",
   "apkUrl": "https://github.com/JoaquinZ87/pelotalibretv-config/releases/latest/download/pelotalibre.apk",
-  "notes": "Solapas por plataforma + cambio de variante (mirror) por dominio adentro · AlÁngulo por JSON (plantilla WordPress nueva, muchas señales)."
+  "notes": "Reproducción automática (ya no hay que apretar la flechita) · solapas por plataforma + variantes por dominio · AlÁngulo por JSON."
 }
