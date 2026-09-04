@@ -1,6 +1,6 @@
 {
-  "versionCode": 3,
-  "versionName": "0.3",
+  "versionCode": 4,
+  "versionName": "0.4",
   "apkUrl": "https://github.com/JoaquinZ87/pelotalibretv-config/releases/latest/download/pelotalibre.apk",
-  "notes": "Pelota Libre (2 frontends) · cambiar de señal desde el reproductor (Atrás) · Eventos centrado."
+  "notes": "Solapas por plataforma + cambio de variante (mirror) por dominio adentro · AlÁngulo por JSON (plantilla WordPress nueva, muchas señales)."
 }
