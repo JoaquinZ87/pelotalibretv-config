@@ -30,20 +30,6 @@
       "strategy": "menuR"
     },
     {
-      "id": "pelotalibreuno",
-      "name": "Pelota Libre (uno)",
-      "platform": "Pelota Libre",
-      "mirrors": [
-        "https://pelotalibre.uno"
-      ],
-      "homePath": "/",
-      "agendaPath": "/agenda-data.php",
-      "sourceUtcOffsetMinutes": -300,
-      "targetUtcOffsetMinutes": -180,
-      "channelsEnabled": false,
-      "strategy": "strapi"
-    },
-    {
       "id": "pelotaalibrela",
       "name": "Pelota Libre (la)",
       "platform": "Pelota Libre",
@@ -132,6 +118,36 @@
       "targetUtcOffsetMinutes": -180,
       "channelsEnabled": false,
       "strategy": "eventsJson"
+    }
+  ],
+  "disabledSourceIds": [
+    "pelotalibreuno"
+  ],
+  "playerBlockedHosts": [
+    "cubbiesexcheat.com",
+    "selahsguttate.com",
+    "llvpn.one",
+    "llvpn.com",
+    "sculshbises.com",
+    "greatdexchange.com",
+    "visariomedia.com",
+    "czvtmhty.com",
+    "hdesvtpufcd.com"
+  ],
+  "playerBlockedUrls": [
+    "https://capo8play.com/js/adcashcap8.js"
+  ],
+  "playerAdText": [
+    "my mobile secure vpn",
+    "source b2b product from china",
+    "buy from alibaba, sell to amazon"
+  ],
+  "playerDocumentRules": [
+    {
+      "parentHost": "playvi.org",
+      "playerHost": "capo8play.com",
+      "playerPath": "/capo.php",
+      "referer": "https://playvi.org/"
     }
   ]
 }
