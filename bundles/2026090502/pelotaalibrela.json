@@ -1,0 +1,68 @@
+{
+  "id": "pelotaalibrela",
+  "name": "Pelota Libre (la)",
+  "platform": "Pelota Libre",
+  "mirrors": [
+    "https://pelotaalibre.la"
+  ],
+  "homePath": "/",
+  "agendaPath": "/agenda.php",
+  "sourceUtcOffsetMinutes": 60,
+  "targetUtcOffsetMinutes": -180,
+  "channelsEnabled": false,
+  "strategy": "menuR",
+  "agendaRecipe": {
+    "format": "html",
+    "recognize": "ul.menu",
+    "items": "ul.menu > li",
+    "allowEmpty": true,
+    "fields": {
+      "title": {
+        "select": "a",
+        "read": "ownText"
+      },
+      "time": {
+        "select": "a span.t"
+      },
+      "category": {
+        "read": "attr",
+        "attribute": "class"
+      }
+    },
+    "servers": {
+      "items": "a[href*='?r=']",
+      "fields": {
+        "name": {
+          "read": "ownText"
+        },
+        "quality": {
+          "select": "span"
+        },
+        "url": {
+          "read": "attr",
+          "attribute": "href",
+          "transforms": [
+            {
+              "op": "query",
+              "value": "r"
+            },
+            {
+              "op": "base64"
+            },
+            {
+              "op": "absolute"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "resolverRecipe": {
+    "format": "html",
+    "url": {
+      "select": "iframe#plyr, iframe#streamIframe, iframe#embedIframe, .player iframe, #player iframe, #playerContainer iframe",
+      "read": "attr",
+      "attribute": "src"
+    }
+  }
+}
