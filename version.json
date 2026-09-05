@@ -1,6 +1,6 @@
 {
-  "versionCode": 6,
-  "versionName": "0.6",
+  "versionCode": 8,
+  "versionName": "0.8",
   "apkUrl": "https://github.com/JoaquinZ87/pelotalibretv-config/releases/latest/download/pelotalibre.apk",
-  "notes": "Esconde los carteles/popups de ads (age-gate, '90% off', etc.) · autoplay que no se frena · Pelota Libre con 4 variantes."
+  "notes": "Nueva fuente Fútbol Libre HD con agenda y múltiples señales. Mejoras del reproductor: autoplay, bloqueo de carteles publicitarios y reintento ante errores. Se elimina pelotalibre.uno."
 }
