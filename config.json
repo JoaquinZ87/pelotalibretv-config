@@ -2,62 +2,136 @@
   "_comment": "Fuentes ACTIVAS agrupadas por PLATAFORMA (campo 'platform'): la app muestra una solapa por plataforma y adentro deja elegir entre sus variantes/mirrors. Editar mirrors/paths/husos aca arregla la app SIN recompilar.",
   "sources": [
     {
-      "id": "pelotalibre", "name": "Pelota Libre", "platform": "Pelota Libre",
-      "mirrors": ["https://pelotalibrehd.su"],
-      "homePath": "/es/", "agendaPath": "/es/agenda/",
-      "sourceUtcOffsetMinutes": -300, "targetUtcOffsetMinutes": -180,
-      "channelsEnabled": false, "strategy": "menu2"
+      "id": "pelotalibre",
+      "name": "Pelota Libre",
+      "platform": "Pelota Libre",
+      "mirrors": [
+        "https://pelotalibrehd.su"
+      ],
+      "homePath": "/es/",
+      "agendaPath": "/es/agenda/",
+      "sourceUtcOffsetMinutes": -300,
+      "targetUtcOffsetMinutes": -180,
+      "channelsEnabled": false,
+      "strategy": "menu2"
     },
     {
-      "id": "pelotalibremas", "name": "Pelota Libre +", "platform": "Pelota Libre",
-      "mirrors": ["https://pelotalibre-hd.su"],
-      "homePath": "/", "agendaPath": "/agenda2/",
-      "sourceUtcOffsetMinutes": -300, "targetUtcOffsetMinutes": -180,
-      "channelsEnabled": false, "strategy": "menuR"
+      "id": "pelotalibremas",
+      "name": "Pelota Libre +",
+      "platform": "Pelota Libre",
+      "mirrors": [
+        "https://pelotalibre-hd.su"
+      ],
+      "homePath": "/",
+      "agendaPath": "/agenda2/",
+      "sourceUtcOffsetMinutes": -300,
+      "targetUtcOffsetMinutes": -180,
+      "channelsEnabled": false,
+      "strategy": "menuR"
     },
     {
-      "id": "pelotalibreuno", "name": "Pelota Libre (uno)", "platform": "Pelota Libre",
-      "mirrors": ["https://pelotalibre.uno"],
-      "homePath": "/", "agendaPath": "/agenda-data.php",
-      "sourceUtcOffsetMinutes": -300, "targetUtcOffsetMinutes": -180,
-      "channelsEnabled": false, "strategy": "strapi"
+      "id": "pelotalibreuno",
+      "name": "Pelota Libre (uno)",
+      "platform": "Pelota Libre",
+      "mirrors": [
+        "https://pelotalibre.uno"
+      ],
+      "homePath": "/",
+      "agendaPath": "/agenda-data.php",
+      "sourceUtcOffsetMinutes": -300,
+      "targetUtcOffsetMinutes": -180,
+      "channelsEnabled": false,
+      "strategy": "strapi"
     },
     {
-      "id": "pelotaalibrela", "name": "Pelota Libre (la)", "platform": "Pelota Libre",
-      "mirrors": ["https://pelotaalibre.la"],
-      "homePath": "/", "agendaPath": "/agenda.php",
-      "sourceUtcOffsetMinutes": 60, "targetUtcOffsetMinutes": -180,
-      "channelsEnabled": false, "strategy": "menuR"
+      "id": "pelotaalibrela",
+      "name": "Pelota Libre (la)",
+      "platform": "Pelota Libre",
+      "mirrors": [
+        "https://pelotaalibre.la"
+      ],
+      "homePath": "/",
+      "agendaPath": "/agenda.php",
+      "sourceUtcOffsetMinutes": 60,
+      "targetUtcOffsetMinutes": -180,
+      "channelsEnabled": false,
+      "strategy": "menuR"
     },
     {
-      "id": "alangulo1", "name": "Al Ángulo TV", "platform": "Al Ángulo TV",
-      "mirrors": ["https://alangulotv.quest"],
-      "homePath": "/", "agendaPath": "/wp-admin/admin-ajax.php?action=futbol_agenda_data",
-      "sourceUtcOffsetMinutes": -300, "targetUtcOffsetMinutes": -180,
-      "channelsEnabled": false, "strategy": "wpjson"
+      "id": "alangulo1",
+      "name": "Al Ángulo TV",
+      "platform": "Al Ángulo TV",
+      "mirrors": [
+        "https://alangulotv.quest"
+      ],
+      "homePath": "/",
+      "agendaPath": "/wp-admin/admin-ajax.php?action=futbol_agenda_data",
+      "sourceUtcOffsetMinutes": -300,
+      "targetUtcOffsetMinutes": -180,
+      "channelsEnabled": false,
+      "strategy": "wpjson"
     },
     {
-      "id": "alangulo2", "name": "Al Ángulo TV (2)", "platform": "Al Ángulo TV",
-      "mirrors": ["https://alangulotv.cx"],
-      "homePath": "/", "agendaPath": "/agenda.php",
-      "sourceUtcOffsetMinutes": 60, "targetUtcOffsetMinutes": -180,
-      "channelsEnabled": false, "strategy": "menuR"
+      "id": "alangulo2",
+      "name": "Al Ángulo TV (2)",
+      "platform": "Al Ángulo TV",
+      "mirrors": [
+        "https://alangulotv.cx"
+      ],
+      "homePath": "/",
+      "agendaPath": "/agenda.php",
+      "sourceUtcOffsetMinutes": 60,
+      "targetUtcOffsetMinutes": -180,
+      "channelsEnabled": false,
+      "strategy": "menuR"
     },
     {
-      "id": "rustico", "name": "Rústico TV", "platform": "Rústico TV",
-      "mirrors": ["https://rusticotv.la", "https://mirusticotv.su", "https://rusticotv.su"],
-      "homePath": "/", "agendaPath": "/agenda.php",
-      "sourceUtcOffsetMinutes": 60, "targetUtcOffsetMinutes": -180,
-      "channelsEnabled": false, "strategy": "menuR"
+      "id": "rustico",
+      "name": "Rústico TV",
+      "platform": "Rústico TV",
+      "mirrors": [
+        "https://rusticotv.la",
+        "https://mirusticotv.su",
+        "https://rusticotv.su"
+      ],
+      "homePath": "/",
+      "agendaPath": "/agenda.php",
+      "sourceUtcOffsetMinutes": 60,
+      "targetUtcOffsetMinutes": -180,
+      "channelsEnabled": false,
+      "strategy": "menuR"
     },
     {
-      "id": "rojadirecta", "name": "RojaDirecta", "platform": "RojaDirecta",
-      "mirrors": ["https://rojadirecta.st"],
-      "homePath": "/", "agendaPath": "/programacion/",
-      "sourceUtcOffsetMinutes": 120, "targetUtcOffsetMinutes": -180,
-      "channelsEnabled": false, "strategy": "rows",
-      "eventRowSelector": "div.match", "eventTimeSelector": "span.time",
-      "eventNameSelector": "span.name", "eventLinkSelector": "div.chans a[href]"
+      "id": "rojadirecta",
+      "name": "RojaDirecta",
+      "platform": "RojaDirecta",
+      "mirrors": [
+        "https://rojadirecta.st"
+      ],
+      "homePath": "/",
+      "agendaPath": "/programacion/",
+      "sourceUtcOffsetMinutes": 120,
+      "targetUtcOffsetMinutes": -180,
+      "channelsEnabled": false,
+      "strategy": "rows",
+      "eventRowSelector": "div.match",
+      "eventTimeSelector": "span.time",
+      "eventNameSelector": "span.name",
+      "eventLinkSelector": "div.chans a[href]"
+    },
+    {
+      "id": "futbollibrehdlol",
+      "name": "Fútbol Libre HD",
+      "platform": "Pelota Libre",
+      "mirrors": [
+        "https://futbollibrehd.lol"
+      ],
+      "homePath": "/",
+      "agendaPath": "/api/agenda",
+      "sourceUtcOffsetMinutes": 0,
+      "targetUtcOffsetMinutes": -180,
+      "channelsEnabled": false,
+      "strategy": "eventsJson"
     }
   ]
 }
