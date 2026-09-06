@@ -1,6 +1,6 @@
 {
-  "versionCode": 8,
-  "versionName": "0.8",
+  "versionCode": 9,
+  "versionName": "0.9",
   "apkUrl": "https://github.com/JoaquinZ87/pelotalibretv-config/releases/latest/download/pelotalibre.apk",
-  "notes": "Nueva fuente Fútbol Libre HD con agenda y múltiples señales. Mejoras del reproductor: autoplay, bloqueo de carteles publicitarios y reintento ante errores. Se elimina pelotalibre.uno."
+  "notes": "Nueva arquitectura: recetas de agendas y enlaces actualizables online. Catálogo firmado, actualización de fuentes sin reiniciar y recuperación de configuración anterior. Instalar esta versión una vez para recibir las próximas mejoras de recetas sin reinstalar."
 }
