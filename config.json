@@ -34,7 +34,7 @@
       "name": "Pelota Libre (la)",
       "platform": "Pelota Libre",
       "mirrors": [
-        "https://pelotaalibre.la"
+        "https://pelotalibre.la"
       ],
       "homePath": "/",
       "agendaPath": "/agenda.php",
