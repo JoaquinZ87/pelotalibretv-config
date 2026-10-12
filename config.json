@@ -9,7 +9,7 @@
         "https://pelotalibrehd.su"
       ],
       "homePath": "/es/",
-      "agendaPath": "/es/agenda/",
+      "agendaPath": "/live5/",
       "sourceUtcOffsetMinutes": -300,
       "targetUtcOffsetMinutes": -180,
       "channelsEnabled": false,
