@@ -62,6 +62,7 @@
       "name": "Al Ángulo TV (2)",
       "platform": "Al Ángulo TV",
       "mirrors": [
+        "https://alangulotv.sx",
         "https://alangulotv.cx"
       ],
       "homePath": "/",
@@ -76,6 +77,7 @@
       "name": "Rústico TV",
       "platform": "Rústico TV",
       "mirrors": [
+        "https://rusticotvplus.org",
         "https://rusticotv.la",
         "https://mirusticotv.su",
         "https://rusticotv.su"
