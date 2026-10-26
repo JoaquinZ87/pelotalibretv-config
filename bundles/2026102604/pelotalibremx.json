@@ -1,0 +1,73 @@
+{
+  "id": "pelotalibremx",
+  "name": "Pelota Libre (mx)",
+  "platform": "Pelota Libre",
+  "mirrors": [
+    "https://pelotalibre.mx"
+  ],
+  "homePath": "/",
+  "agendaPath": "/agenda.json",
+  "sourceUtcOffsetMinutes": -300,
+  "targetUtcOffsetMinutes": -180,
+  "channelsEnabled": false,
+  "strategy": "strapi",
+  "agendaRecipe": {
+    "format": "json",
+    "recognize": "$.data",
+    "items": "$.data[*].attributes",
+    "allowEmpty": true,
+    "timeFormat": "HH:mm:ss",
+    "fields": {
+      "title": {
+        "select": "$.diary_description"
+      },
+      "time": {
+        "select": "$.diary_hour"
+      },
+      "date": {
+        "select": "$.date_diary"
+      },
+      "category": {
+        "select": "$.deportes"
+      }
+    },
+    "servers": {
+      "items": "$.embeds.data[*].attributes",
+      "fields": {
+        "name": {
+          "select": "$.embed_name"
+        },
+        "quality": {
+          "select": "$.idioma"
+        },
+        "url": {
+          "select": "$.embed_iframe",
+          "transforms": [
+            {
+              "op": "query",
+              "value": "r"
+            },
+            {
+              "op": "base64"
+            },
+            {
+              "op": "absolute"
+            }
+          ]
+        }
+      }
+    },
+    "request": {
+      "path": "https://agenda18.com/agenda.json"
+    }
+  },
+  "resolverRecipe": {
+    "format": "html",
+    "url": {
+      "select": "iframe#plyr, iframe#streamIframe, iframe#embedIframe, .player iframe, #player iframe, #playerContainer iframe",
+      "read": "attr",
+      "attribute": "src"
+    }
+  },
+  "sourceTimeZone": "America/Lima"
+}
