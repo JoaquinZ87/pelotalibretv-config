@@ -2,13 +2,28 @@
   "_comment": "Fuentes ACTIVAS agrupadas por PLATAFORMA (campo 'platform'): la app muestra una solapa por plataforma y adentro deja elegir entre sus variantes/mirrors. Editar mirrors/paths/husos aca arregla la app SIN recompilar.",
   "sources": [
     {
+      "id": "futbolvivo",
+      "name": "Fútbol Vivo",
+      "platform": "Pelota Libre",
+      "mirrors": [
+        "https://futbolvivo.site"
+      ],
+      "homePath": "/",
+      "agendaPath": "/api/agenda",
+      "sourceUtcOffsetMinutes": -300,
+      "targetUtcOffsetMinutes": -180,
+      "channelsEnabled": false,
+      "strategy": "eventsJson",
+      "sourceTimeZone": "America/Lima"
+    },
+    {
       "id": "pelotalibre",
       "name": "Pelota Libre",
       "platform": "Pelota Libre",
       "mirrors": [
         "https://pelotalibrehd.su"
       ],
-      "homePath": "/es/",
+      "homePath": "/live5/",
       "agendaPath": "/live5/",
       "sourceUtcOffsetMinutes": -300,
       "targetUtcOffsetMinutes": -180,
@@ -36,7 +51,7 @@
       "mirrors": [
         "https://pelotalibre.la"
       ],
-      "homePath": "/",
+      "homePath": "/main.php",
       "agendaPath": "/agenda.php",
       "sourceUtcOffsetMinutes": 60,
       "targetUtcOffsetMinutes": -180,
