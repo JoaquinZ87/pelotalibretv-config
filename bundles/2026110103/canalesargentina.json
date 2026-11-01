@@ -1,0 +1,139 @@
+{
+  "id": "canalesargentina",
+  "name": "Canales Argentina",
+  "platform": "Canales Argentina",
+  "mirrors": [
+    "https://canalesenvivodeargentina.blogspot.com"
+  ],
+  "homePath": "/search/label/Deportes",
+  "agendaPath": "/sitemap.xml?page=1",
+  "sourceUtcOffsetMinutes": -180,
+  "targetUtcOffsetMinutes": -180,
+  "channelsEnabled": false,
+  "strategy": "recipe",
+  "agendaRecipe": {
+    "format": "html",
+    "recognize": "urlset",
+    "items": "url:has(loc:matches(/(lpf-play|espn|fox-sports|tnt-sports|tyc-sports|dsports)[^/]*-en-vivo))",
+    "allowEmpty": false,
+    "groupByTitle": true,
+    "fields": {
+      "title": {
+        "select": "loc",
+        "transforms": [
+          {
+            "op": "after",
+            "value": ".com/"
+          },
+          {
+            "op": "after",
+            "value": "/"
+          },
+          {
+            "op": "after",
+            "value": "/"
+          },
+          {
+            "op": "before",
+            "value": "-en-vivo"
+          },
+          {
+            "op": "replace",
+            "value": "-",
+            "with": " "
+          },
+          {
+            "op": "replace",
+            "value": "lpf",
+            "with": "LPF"
+          },
+          {
+            "op": "replace",
+            "value": "espn",
+            "with": "ESPN"
+          },
+          {
+            "op": "replace",
+            "value": "tyc",
+            "with": "TyC"
+          },
+          {
+            "op": "replace",
+            "value": "tnt",
+            "with": "TNT"
+          },
+          {
+            "op": "replace",
+            "value": "dsports",
+            "with": "DSports"
+          },
+          {
+            "op": "replace",
+            "value": "fox",
+            "with": "Fox"
+          },
+          {
+            "op": "replace",
+            "value": "play",
+            "with": "Play"
+          }
+        ]
+      },
+      "category": {
+        "literal": "Deportes"
+      }
+    },
+    "servers": {
+      "items": "loc",
+      "needsResolve": true,
+      "fields": {
+        "name": {
+          "literal": "Ver canal"
+        },
+        "url": {
+          "read": "text",
+          "transforms": [
+            {
+              "op": "absolute"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "resolverRecipe": {
+    "format": "html",
+    "url": {
+      "select": ".post-body > script:containsData(unescape)",
+      "read": "data",
+      "transforms": [
+        {
+          "op": "after",
+          "value": "unescape('"
+        },
+        {
+          "op": "before",
+          "value": "')"
+        },
+        {
+          "op": "urlDecode"
+        },
+        {
+          "op": "after",
+          "value": "<iframe"
+        },
+        {
+          "op": "after",
+          "value": "src=\""
+        },
+        {
+          "op": "before",
+          "value": "\""
+        },
+        {
+          "op": "absolute"
+        }
+      ]
+    }
+  }
+}

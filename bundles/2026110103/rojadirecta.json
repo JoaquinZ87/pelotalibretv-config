@@ -1,0 +1,59 @@
+{
+  "id": "rojadirecta",
+  "name": "RojaDirecta",
+  "platform": "RojaDirecta",
+  "mirrors": [
+    "https://rojadirecta.st"
+  ],
+  "homePath": "/",
+  "agendaPath": "/programacion/",
+  "sourceUtcOffsetMinutes": 120,
+  "targetUtcOffsetMinutes": -180,
+  "channelsEnabled": false,
+  "strategy": "rows",
+  "eventRowSelector": "div.match",
+  "eventTimeSelector": "span.time",
+  "eventNameSelector": "span.name",
+  "eventLinkSelector": "div.chans a[href]",
+  "agendaRecipe": {
+    "format": "html",
+    "recognize": ".wrap .tabla",
+    "items": "div.match",
+    "allowEmpty": true,
+    "groupByTitle": true,
+    "fields": {
+      "title": {
+        "select": "span.name"
+      },
+      "time": {
+        "select": "span.time"
+      }
+    },
+    "servers": {
+      "items": "div.chans a[href]",
+      "needsResolve": true,
+      "fields": {
+        "name": {
+          "read": "text"
+        },
+        "url": {
+          "read": "attr",
+          "attribute": "href",
+          "transforms": [
+            {
+              "op": "absolute"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "resolverRecipe": {
+    "format": "html",
+    "url": {
+      "select": "iframe#plyr, iframe#streamIframe, iframe#embedIframe, .player iframe, #player iframe, #playerContainer iframe",
+      "read": "attr",
+      "attribute": "src"
+    }
+  }
+}

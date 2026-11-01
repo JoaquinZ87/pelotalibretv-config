@@ -1,0 +1,58 @@
+{
+  "id": "futbollibrehdlol",
+  "name": "Fútbol Libre HD",
+  "platform": "Pelota Libre",
+  "mirrors": [
+    "https://futbollibrehd.lol"
+  ],
+  "homePath": "/",
+  "agendaPath": "/api/agenda",
+  "sourceUtcOffsetMinutes": 0,
+  "targetUtcOffsetMinutes": -180,
+  "channelsEnabled": false,
+  "strategy": "eventsJson",
+  "agendaRecipe": {
+    "format": "json",
+    "recognize": "$.events",
+    "items": "$.events[*]",
+    "allowEmpty": true,
+    "timeFormat": "HH:mm:ss",
+    "fields": {
+      "title": {
+        "select": "$.title"
+      },
+      "time": {
+        "select": "$.time"
+      },
+      "date": {
+        "select": "$.date"
+      },
+      "category": {
+        "select": "$.sport"
+      }
+    },
+    "servers": {
+      "items": "$.embeds[*]",
+      "fields": {
+        "name": {
+          "select": "$.name"
+        },
+        "quality": {
+          "select": "$.lang"
+        },
+        "url": {
+          "select": "$.iframe"
+        }
+      }
+    }
+  },
+  "resolverRecipe": {
+    "format": "html",
+    "url": {
+      "select": "iframe#plyr, iframe#streamIframe, iframe#embedIframe, .player iframe, #player iframe, #playerContainer iframe",
+      "read": "attr",
+      "attribute": "src"
+    }
+  },
+  "sourceTimeZone": "UTC"
+}
