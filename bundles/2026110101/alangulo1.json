@@ -1,0 +1,51 @@
+{
+  "id": "alangulo1",
+  "name": "Al Ángulo TV",
+  "platform": "Al Ángulo TV",
+  "mirrors": [
+    "https://alangulotv.quest"
+  ],
+  "homePath": "/",
+  "agendaPath": "/wp-admin/admin-ajax.php?action=futbol_agenda_data",
+  "sourceUtcOffsetMinutes": -300,
+  "targetUtcOffsetMinutes": -180,
+  "channelsEnabled": false,
+  "strategy": "wpjson",
+  "agendaRecipe": {
+    "format": "json",
+    "timeFormat": "HH:mm:ss",
+    "recognize": "$.data",
+    "items": "$.data[*]",
+    "allowEmpty": true,
+    "fields": {
+      "title": {
+        "select": "$.title"
+      },
+      "time": {
+        "select": "$.time_raw"
+      },
+      "category": {
+        "select": "$.country"
+      }
+    },
+    "servers": {
+      "items": "$.channels[*]",
+      "fields": {
+        "name": {
+          "select": "$.name"
+        },
+        "url": {
+          "select": "$.stream_url"
+        }
+      }
+    }
+  },
+  "resolverRecipe": {
+    "format": "html",
+    "url": {
+      "select": "iframe#plyr, iframe#streamIframe, iframe#embedIframe, .player iframe, #player iframe, #playerContainer iframe",
+      "read": "attr",
+      "attribute": "src"
+    }
+  }
+}
