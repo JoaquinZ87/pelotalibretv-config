@@ -6,6 +6,7 @@
       "name": "Fútbol Vivo",
       "platform": "Pelota Libre",
       "mirrors": [
+        "https://futbollibreliga.online",
         "https://futbolvivo.online"
       ],
       "homePath": "/",
@@ -77,6 +78,7 @@
       "name": "Al Ángulo TV (2)",
       "platform": "Al Ángulo TV",
       "mirrors": [
+        "https://alangulotv.net",
         "https://alangulotv.st",
         "https://alangulotv.sx",
         "https://alangulotv.cx"
