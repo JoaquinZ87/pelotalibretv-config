@@ -51,6 +51,7 @@
       "name": "Pelota Libre (sx)",
       "platform": "Pelota Libre",
       "mirrors": [
+        "https://pelotalibres.st",
         "https://pelotalibre.sx"
       ],
       "homePath": "/",
@@ -96,6 +97,7 @@
       "name": "Rústico TV",
       "platform": "Rústico TV",
       "mirrors": [
+        "https://rusticotv.st",
         "https://rusticotvplus.org",
         "https://rusticotv.la",
         "https://mirusticotv.su",
